@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Sabor Casero</title>
+  <link rel="stylesheet" href="Act1S4.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor header-contenido">
+      <div>
+        <h1>Restaurante Sabor Casero</h1>
+        <p class="subtitulo">Sabor, tradición y una experiencia especial en cada platillo</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#terminos">Términos</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="overlay">
+      <div class="contenedor hero-contenido">
+        <h2>Bienvenidos a Sabor Casero</h2>
+        <p>
+          Disfruta de nuestros platillos preparados con ingredientes frescos,
+          excelente atención y un ambiente cómodo para compartir con familia y amigos.
+        </p>
+        <a href="#reservas" class="btn">Haz tu reserva</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservas" class="seccion">
+    <div class="contenedor tarjeta">
+      <h2>Reservas</h2>
+      <p class="texto-centro">Completa el formulario para apartar tu mesa.</p>
+
+      <form class="formulario">
+        <div class="grupo-formulario">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="grupo-formulario">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="grupo-formulario">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="grupo-formulario">
+          <label for="personas">Número de personas</label>
+          <input type="number" id="personas" name="personas" min="1" placeholder="Ej. 4" required>
+        </div>
+
+        <button type="submit" class="btn">Reservar</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="menu" class="seccion fondo-suave">
+    <div class="contenedor">
+      <h2>Menú</h2>
+      <p class="texto-centro">Algunos de nuestros platillos favoritos</p>
+
+      <div class="menu-contenedor">
+        <div class="platillo">
+          <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=800&q=80" alt="Ensalada César">
+          <div class="platillo-info">
+            <h3>Ensalada César</h3>
+            <p>Lechuga fresca, aderezo césar, queso parmesano y crutones.</p>
+            <span>$120</span>
+          </div>
+        </div>
+
+        <div class="platillo">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=800&q=80" alt="Pasta Alfredo">
+          <div class="platillo-info">
+            <h3>Pasta Alfredo</h3>
+            <p>Pasta cremosa con salsa alfredo y pollo a la parrilla.</p>
+            <span>$180</span>
+          </div>
+        </div>
+
+        <div class="platillo">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Hamburguesa Especial">
+          <div class="platillo-info">
+            <h3>Hamburguesa Especial</h3>
+            <p>Carne de res, queso, vegetales frescos y papas a la francesa.</p>
+            <span>$160</span>
+          </div>
+        </div>
+
+        <div class="platillo">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Pastel de Chocolate">
+          <div class="platillo-info">
+            <h3>Pastel de Chocolate</h3>
+            <p>Postre casero con intenso sabor a chocolate y textura suave.</p>
+            <span>$90</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="acerca" class="seccion">
+    <div class="contenedor tarjeta">
+      <h2>Acerca de nosotros</h2>
+      <p>
+        En Sabor Casero buscamos ofrecer una experiencia agradable por medio de una atención de calidad,
+        un ambiente cómodo y recetas preparadas con dedicación. Nuestro objetivo es que cada cliente
+        disfrute no solo la comida, sino también el momento.
+      </p>
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <div class="contenedor contacto-grid">
+      <div class="tarjeta">
+        <h2>Contacto</h2>
+        <p><strong>Dirección:</strong> Av. Principal #123, Ciudad de México</p>
+        <p><strong>Teléfono:</strong> 55 1234 5678</p>
+        <p><strong>Correo:</strong> contacto@saborcasero.com</p>
+        <p><strong>Horario:</strong> Lunes a Domingo de 1:00 pm a 10:00 pm</p>
+      </div>
+
+      <div class="tarjeta">
+        <h2>¿Por qué visitarnos?</h2>
+        <ul class="lista-bonita">
+          <li>Ambiente familiar y agradable</li>
+          <li>Ingredientes frescos y de calidad</li>
+          <li>Servicio rápido y atento</li>
+          <li>Platillos variados para todos los gustos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="terminos" class="seccion fondo-suave">
+    <div class="contenedor tarjeta">
+      <h2>Términos y condiciones</h2>
+      <p>
+        Las reservaciones están sujetas a disponibilidad. El restaurante podrá modificar precios, horarios
+        y promociones sin previo aviso. Al utilizar este sitio, el usuario acepta las condiciones aquí descritas.
+      </p>
+    </div>
+  </section>
+
+  <section id="privacidad" class="seccion">
+    <div class="contenedor tarjeta">
+      <h2>Políticas de privacidad</h2>
+      <p>
+        Los datos proporcionados por el usuario serán utilizados únicamente para fines de contacto y reservación.
+        La información no será compartida con terceros sin autorización.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Restaurante Sabor Casero | Todos los derechos reservados</p>
+      <p>Facebook | Instagram | TikTok</p>
+    </div>
+  </footer>
+
+</body>
+</html>
